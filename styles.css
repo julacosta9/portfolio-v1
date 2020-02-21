@@ -1,0 +1,28 @@
+#wrapper {
+    /* border: 1px solid pink; */
+}
+
+.container {
+    border: 1px solid brown;
+    
+}
+
+#navbar {
+    border: 1px solid red;
+}
+
+#hero-section {
+    border: 1px solid blue;
+}
+
+#hero-section {
+    border: 1px solid blue;
+}
+
+#about-section {
+    border: 1px solid purple;
+}
+
+#experience-section {
+    border: 1px solid yellowgreen;
+}
