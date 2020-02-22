@@ -1,40 +1,88 @@
+@font-face {
+    font-family: 'SF Mono Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Mono Regular'), url('fonts/sf-mono-cufonfonts-webfont/SFMonoRegular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Calibre Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Calibre Regular'), url('fonts/calibre-cufonfonts-webfont/CalibreRegular.woff') format('woff');
+}
+
+body {
+    background: #EFEFEF;
+    color: #545454;
+    font-family: "Calibre Regular", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: ;
+}
+
+a:hover {
+    text-decoration: underline
+}
 #wrapper {
     border: 1px solid blue;
 }
 
 .container {
     /* border: 1px solid green; */
-    padding: 0 25px;
 }
 
 .section-headline {
-    font-size: 20px;
+    font-size: 32px;
 }
 
+button {
+    font-family: "SF Mono Regular", Arial, Helvetica, sans-serif;
+    border: 1px solid #FF3B3F;
+    border-radius: 5px;
+    color: #FF3B3F;
+    background: none;
+
+}
+
+button:hover {
+    background: rgba(255, 59, 62, 0.041);
+    cursor: pointer;
+}
+
+.section-number {
+    font-family: "SF Mono Regular", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
 
 /* nav */
 
 nav {
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px;
+    padding: 10px 50px;
     align-items: center;
+    font-family: "SF Mono Regular", Arial, Helvetica, sans-serif;
+    background: #FFFFFF;
+}
 
-    /* -moz-box-pack: justify;
-    -moz-box-align: center;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    counter-reset: item 0;
-    z-index: 12; */
+#logo {
+    padding: 10px;
+    width: 20px;
+    text-align: center;
+    border: 1px solid #FF3B3F;
+    color: #FF3B3F;
+    
 }
 
 .navLink {
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 14px;
 }
 
 /* hero section */
@@ -43,8 +91,8 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: start;
-    border: 1px solid blue;
-    padding: 150px 0;
+    /* border: 1px solid blue; */
+    padding: 150px 10px;
     margin: 0 auto;
     max-width: 1000px;
     justify-content: space-between;
@@ -52,6 +100,8 @@ nav {
 }
 
 #hero-pre-text {
+    font-family: "SF Mono Regular", Arial, Helvetica, sans-serif;
+    color: #FF3B3F;
     font-size: 16px;
 }
 
@@ -60,22 +110,26 @@ nav {
 }
 
 #hero-name {
-    color: blue;
+
 }
 
 #hero-tagline {
-    color: gray;
+
 }
 
 #subheader-text {
     font-size:20px;
 }
 
+.cta-contact {
+    padding: 1.25rem 1.75rem;
+}
+
 /* about section */
 
 #about-section {
     border: 1px solid green;
-    padding: 150px 0;
+    padding: 150px 10px;
     margin: 0 auto;
     max-width: 1000px;
 }
@@ -92,7 +146,6 @@ nav {
 
 #bio-para p {
     padding: 20px 0;
-    font-size: 16px;
 }
 
 #headshot-container {
@@ -104,6 +157,100 @@ nav {
 
 #headshot {
     width: 100%;
+    border-radius: 12px;
 }
 
+/* experience section */
 
+#experience-section {
+    border: 1px solid green;
+    padding: 150px 10px;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+#experience-content {
+    display: flex;
+    align-items: flex-start;
+    padding: 30px 0px;
+}
+
+.job-button {
+    font-family: "SF Mono Regular", Arial, Helvetica, sans-serif;
+    border: none;
+    padding: 15px 0px;
+    color: #A9A9A9;
+    
+}
+
+#jobList :hover {
+    color: #FF3B3F;
+    background: none;
+    
+}
+
+.job-button-selected {
+    color: #FF3B3F;
+}
+
+#jobDetails {
+    padding-left: 30px;
+}
+
+.jobTitle {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.jobDateRange {
+    font-family: "SF Mono Regular", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding-bottom: 40px;
+}
+
+#jobDetails li {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+#social-icons-fixed-bar-container {
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 40px;
+    right: auto;
+    z-index: 10;
+    color: rgb(168, 178, 209);
+}
+
+.social-icon-list {
+    text-align: center;
+}
+
+#social-icons-fixed-bar-container ::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: rgb(168, 178, 209);
+}
+
+#email-fixed-bar-container {
+    width: 40px;
+    position: fixed;
+    bottom: 300px;
+    left: auto;
+    right: 40px;
+    z-index: 10;
+    color: rgb(168, 178, 209);
+    transform: rotate(90deg);
+    font-family: "SF Mono Regular", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#email-fixed-bar-container a{
+    color: rgb(168, 178, 209);
+    font-family: "SF Mono Regular", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}

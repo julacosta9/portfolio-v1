@@ -21,11 +21,21 @@
 <body>
 
     <div id="wrapper">
+        <div id="social-icons-fixed-bar-container">
+            <ul class="social-icon-list">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+        <div id="email-fixed-bar-container">
+            <a href="mailto:julacosta9@gmail.com">julacosta9@gmail.com</a>
+        </div>
         <div class="container">
             <nav>
                 <!-- will prob want to turn these nav links into a list -->
                 <div id="logo">
-                    Logo/Icon
+                    J
                 </div>
                 <div id="navLinks">
                     <a class="navLink" href="#">01. About</a>
@@ -37,16 +47,16 @@
             </nav>
             <section id="hero-section">
                 <span id="hero-pre-text">Hi, my name is</span>
-                <h1 id="hero-name" class="hero-header-text">Julian Acosta</h1>
+                <h1 id="hero-name" class="hero-header-text">Julian Acosta.</h1>
                 <h2 id="hero-tagline" class="hero-header-text">I build things for the web.</h2>
                 <h3 id="subheader-text">I'm a full stack web developer based in San Diego, CA specializing in
                     building high-quality websites and applications.</h2>
-                    <button class="btn">
+                    <button class="btn cta-contact">
                         Get In Touch
                     </button>
             </section>
             <section id="about-section">
-                <h3 class="section-headline">01. About Me</h3>
+                <h3 class="section-headline"><span class="section-number">01.</span> About Me</h3>
                 <div id="about-content">
                     <div id="bio-para">
                         <p>Hello! I'm Julian, a asdlkfja;sldkj a;slkdj dkj dlfkjdk a asdlkfja;sldkj a;slkdj dkj dlfkjdk
@@ -68,19 +78,22 @@
                 </div>
             </section>
             <section id="experience-section">
-                <h3 id="experience-headline">
-                    02. Where I've Worked
-                </h3>
-                <div id="job-content">
-                    <ul id="jobList">
-                        <!-- Potentially but buttons inside each li -->
-                        <li>Red Door Interactive</li>
-                        <li>RR Donnelley</li>
-                    </ul>
-                    <div id="jobDetail">
-                        <h4>Technical Project Manager <span class="at-symbol">@</span> <a href="reddoor.biz">Red
+                <h3 class="section-headline"><span class="section-number">02.</span> Where I've Worked</h3>
+                <div id="experience-content">
+                    <div id="job-button-container">
+                        <ul id="jobList">
+                            <li>
+                                <button class="job-button">Red Door Interactive</button>
+                            </li>
+                            <li>
+                                <button class="job-button">RR Donnelley</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="jobDetails">
+                        <h4 class="jobTitle">Technical Project Manager <span class="at-symbol">@</span> <a href="reddoor.biz">Red
                                 Door Interactive</a></h4>
-                        <h5>February 2017 - November 2019</h5>
+                        <h5 class="jobDateRange">February 2017 - November 2019</h5>
                         <ul>
                             <li>Statement 1</li>
                             <li>Statement 2</li>
@@ -88,6 +101,8 @@
                         </ul>
                     </div>
                 </div>
+                </div>
+            </section>
             </section>
             <!-- <section id="projects">
                 <div class="row">
