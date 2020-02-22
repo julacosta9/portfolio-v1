@@ -1,110 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>Julian Acosta | Full-Stack Web Developer</title>
 
-	<!-- Bootstrap -->
-	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Julian Acosta | Full-Stack Web Developer</title>
+
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 
-	<!-- Google Fonts-->
+    <!-- Google Fonts-->
 
-	<!-- CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <div id="wrapper">
         <div class="container">
-            <div class="row" id="navbar"> 
+            <nav>
                 <!-- will prob want to turn these nav links into a list -->
-                <div class="col-2">
+                <div id="logo">
                     Logo/Icon
                 </div>
-                <div class="col-2">
-                    About
+                <div id="navLinks">
+                    <a class="navLink" href="#">01. About</a>
+                    <a class="navLink" href="#">02. Experience</a>
+                    <a class="navLink" href="#">03. Work</a>
+                    <a class="navLink" href="#">04. Contact</a>
+                    <button class="navLink">Resume</button>
                 </div>
-                <div class="col-2">
-                    Experience
-                </div>
-                <div class="col-2">
-                    Work
-                </div>
-                <div class="col-2">
-                    Contact
-                </div>
-                <div class="col-2">
-                    <div class="btn btn-primary">Resume</div>
-                </div>
-            </div>
-            <div id="hero-section">
-                <div id="hero-headline-section">
-                    <div class="row hero-pre-text">
-                        <p id="hero-pre-text">Hi, my name is</p>
-                    </div>
-                    <div class="row">
-                        <h1 id="hero-name">Julian Acosta</h1>
-                    </div>
-                    <div class="row">
-                        <p id="hero-tagline">I build things for the web.</p>
-                    </div>
-                </div>
-                <div id="hero-subheader-section">
-                    <div class="row">
-                        <h2 id="subheader-text">I'm a full stack web developer based in San Diego, CA specializing in building high-quality websites and applications.</h2>
-                    </div>
-                </div>
-                <div id="hero-cta">
-                    <div class="btn btn-primary">
+            </nav>
+            <section id="hero-section">
+                <span id="hero-pre-text">Hi, my name is</span>
+                <h1 id="hero-name" class="hero-header-text">Julian Acosta</h1>
+                <h2 id="hero-tagline" class="hero-header-text">I build things for the web.</h2>
+                <h3 id="subheader-text">I'm a full stack web developer based in San Diego, CA specializing in
+                    building high-quality websites and applications.</h2>
+                    <button class="btn">
                         Get In Touch
-                    </div>
-                </div>
-            </div>
+                    </button>
+            </section>
             <section id="about-section">
-                <div class="row">
-                    <div class="row" id="about-headline">
-                        01. About Me
+                <h3 class="section-headline">01. About Me</h3>
+                <div id="about-content">
+                    <div id="bio-para">
+                        <p>Hello! I'm Julian, a asdlkfja;sldkj a;slkdj dkj dlfkjdk a asdlkfja;sldkj a;slkdj dkj dlfkjdk
+                            a
+                            asdlkfja;sldkj a;slkdj dkj dlfkjdk a asdlkfja;sldkj a;slkdj dkj dlfkjdk a asdlkfja;sldkj</p>
+
+                        <p>Hello! I'm Julian, a asdlkfja;sldkj a;slkdj dkj dlfkjdk a asdlkfja;sldkj a;slkdj dkj dlfkjdk
+                            a
+                            asdlkfja;sldkj a;slkdj dkj dlfkjdk a asdlkfja;sldkj a;slkdj dkj dlfkjdk a asdlkfja;sldkj</p>
+
+                        <p>Hello! I'm Julian, a asdlkfja;sldkj a;slkdj dkj dlfkjdk a asdlkfja;sldkj a;slkdj dkj dlfkjdk
+                            a
+                            asdlkfja;sldkj a;slkdj dkj dlfkjdk a asdlkfja;sldkj a;slkdj dkj dlfkjdk a asdlkfja;sldkj</p>
+                        </p>
+                    </div>
+                    <div id="headshot-container">
+                        <img src="assets/Julian Headshot.jpg" alt="Julian Acosta Headshot" id="headshot">
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-6">
-                        Hello! I'm Julian, a asdlkfja;sldkj a;slkdj  dkj dlfkjdk a asdlkfja;sldkj a;slkdj  dkj dlfkjdk a asdlkfja;sldkj a;slkdj  dkj dlfkjdk a asdlkfja;sldkj a;slkdj  dkj dlfkjdk a asdlkfja;sldkj a;slkdj  dkj dlfkjdk a asdlkfja;sldkj a;slkdj  dkj dlfkjdka asdlkfja;sldkj a;slkdj  dkj dlfkjdk a asdlkfja;sldkj a;slkdj  dkj dlfkjdk a asdlkfja;sldkj a;slkdj  dkj dlfkjdk
-                    </div>
-                    <div class="col-6">
-                        Headshot Image
-                    </div>
-                </div>        
             </section>
             <section id="experience-section">
-                <div class="row">
-                    <div class="row" id="experience-headline">
-                        02. Where I've Worked
+                <h3 id="experience-headline">
+                    02. Where I've Worked
+                </h3>
+                <div id="job-content">
+                    <ul id="jobList">
+                        <!-- Potentially but buttons inside each li -->
+                        <li>Red Door Interactive</li>
+                        <li>RR Donnelley</li>
+                    </ul>
+                    <div id="jobDetail">
+                        <h4>Technical Project Manager <span class="at-symbol">@</span> <a href="reddoor.biz">Red
+                                Door Interactive</a></h4>
+                        <h5>February 2017 - November 2019</h5>
+                        <ul>
+                            <li>Statement 1</li>
+                            <li>Statement 2</li>
+                            <li>Statement 3</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <div id="jobInfo">
-                            <ul id="jobList">
-                                <!-- Potentially but buttons inside each li -->
-                                <li>Red Door Interactive</li> 
-                                <li>RR Donnelley</li>
-                            </ul>
-                            <div id="jobDetail">
-                                <h4>Technical Project Manager <span class="at-symbol">@</span> <a href="reddoor.biz">Red Door Interactive</a></h4>
-                                <h5>February 2017 - November 2019</h5>
-                                <ul>
-                                    <li>Statement 1</li>
-                                    <li>Statement 2</li>
-                                    <li>Statement 3</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>        
             </section>
             <!-- <section id="projects">
                 <div class="row">
@@ -123,4 +106,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
