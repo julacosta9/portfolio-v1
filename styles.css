@@ -552,27 +552,38 @@ svg :hover {
     #about-section {
         padding-left: 30px;
         padding-right: 30px;
+        padding-bottom: 50px;
     }
 
     #experience-section {
         padding-left: 30px;
         padding-right: 30px;
+        padding-bottom: 50px;
     }
 
     #projects-section {
         padding-left: 30px;
         padding-right: 30px;
+        padding-bottom: 50px;
     }
 
     #contact-section {
         padding-left: 30px;
         padding-right: 30px;
+        padding-bottom: 150px;
     }
 }
 
 @media screen and (max-width: 830px) {
     body {
         font-size: 18px;
+    }
+
+    .section-headline {
+        font-family: "Calibre Regular", Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        padding-bottom: 40px;
+        font-weight: bold;
     }
 
     .hamburger {
@@ -623,4 +634,50 @@ svg :hover {
         padding-bottom: 30px;
         color: #ff3b3f;
     }
+
+    #experience-content {
+        display: block;
+        position:relative;
+        padding-top: 0;
+    }
+
+    #jobList {
+        display: flex;
+        overflow-x: scroll;
+        /* width: calc(100% + 50px); */
+        /* margin-left: -20px; */
+        position: relative;
+    }
+
+    #joblist ul li {
+        border-bottom: 1px solid red;
+    }
+
+    #job-button-container {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .job-button {
+        padding: 15px 0px;
+        margin-right: 25px;
+        width: 100px;
+    }
+
+    .job-button-selected {
+        color: #ff3b3f;
+        border-left: none;
+        border-bottom: 1px solid #ff3b3f;
+        border-radius: 0;
+    }
+
+    #jobDetails {
+        width: 100%;
+    }
+
+    .jobTitle {
+        font-size: 20px;
+    }
+
 }
+
