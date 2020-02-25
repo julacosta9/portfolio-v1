@@ -17,11 +17,11 @@
 }
 
 @font-face {
-    font-family: "Calibre Bold";
+    font-family: "Calibre Semibold";
     font-style: normal;
     font-weight: normal;
-    src: local("Calibre Bold"),
-        url("fonts/calibre-cufonfonts-webfont/CalibreBold.woff") format("woff");
+    src: local("Calibre Semibold"),
+        url("fonts/calibre-cufonfonts-webfont/CalibreSemibold.woff") format("woff");
 }
 
 body {
@@ -53,9 +53,10 @@ a:visited {
 }
 
 .section-headline {
+    font-family: "Calibre Semibold", Arial, Helvetica, sans-serif;
     font-size: 40px;
     padding-bottom: 40px;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .section-number {
@@ -91,7 +92,7 @@ nav {
 
 #logo {
     /* font-family: "Calibre Bold", Arial, Helvetica, sans-serif; */
-    padding: 10px;
+    padding: 7px 10px;
     width: 20px;
     text-align: center;
     border: 1px solid #ff3b3f;
@@ -103,6 +104,10 @@ nav {
     text-decoration: none;
     font-size: 14px;
     color: #fff;
+}
+
+.hamburger {
+    display: none;
 }
 
 /* hero section */
@@ -126,7 +131,7 @@ nav {
     -moz-box-align: center;
     flex-direction: column;
     align-items: flex-start;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 #hero-pre-text {
@@ -137,25 +142,25 @@ nav {
 }
 
 .hero-header-text {
-    font-family: "Calibre", Arial, Helvetica, sans-serif;
+    font-family: "Calibre Semibold", Arial, Helvetica, sans-serif;
     font-size: 80px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 #hero-name {
-    padding-bottom: 10px;
+    line-height: .9;
 }
 
 #hero-tagline {
     color: gray;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
 
 #subheader-text {
     font-size: 20px;
     color: gray;
     width: 50%;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 .cta-contact {
@@ -187,14 +192,14 @@ nav {
 #headshot-container {
     width: 40%;
     margin-left: auto;
-    margin-right: 150px;
+    margin-right: 170px;
     max-width: 300px;
     position: relative;
 }
 
 #headshot {
     width: 100%;
-    border-radius: 12px;
+    border-radius: 2px;
 }
 
 /* experience section */
@@ -202,7 +207,15 @@ nav {
 #experience-section {
     padding: 150px 10px;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 800px;
+}
+
+.at-symbol {
+    color: #ff3b3f;
+}
+
+.jobDateRange {
+    color: rgb(168, 178, 209);
 }
 
 #experience-content {
@@ -211,9 +224,34 @@ nav {
     padding: 30px 0px;
 }
 
+#job-button-container {
+    width: 30%;
+}
+
+#jobList {
+    width: 85%;
+}
+
 #jobList :hover {
     /* color: #FF3B3F; */
     background: rgba(255, 59, 62, 0.082);
+}
+
+#job-bulletpoints {
+    width: 90%;
+}
+
+#job-bulletpoints ul li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+#job-bulletpoints ul li::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: #ff3b3f;
 }
 
 .job-button {
@@ -237,8 +275,8 @@ nav {
 }
 
 #jobDetails {
-    padding-left: 50px;
     padding-top: 15px;
+    width: 70%;
 }
 
 .jobTitle {
@@ -283,13 +321,13 @@ nav {
     color: #ff3b3f;
     font-family: "SF Mono Regular", Arial, Helvetica, sans-serif;
     font-size: 14px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .project-title {
+    font-family: "Calibre Semibold", Arial, Helvetica, sans-serif;
     font-size: 32px;
-    padding-bottom: 30px;
-    font-weight: 600;
+    padding-bottom: 10px;
 }
 
 .technology-list {
@@ -303,7 +341,8 @@ nav {
     list-style: outside none none;
     font-size: 12px;
     font-family: "SF Mono Regular", Arial, Helvetica, sans-serif;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
+    color: rgb(168, 178, 209);
 }
 
 .tech-item {
@@ -311,9 +350,9 @@ nav {
 }
 
 .project-description {
-    padding: 20px 30px;
+    padding: 20px 20px;
     background: #8eaebd;
-    width: 80%;
+    width: 72%;
     margin-left: auto;
     border-radius: 3px;
     box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
@@ -332,6 +371,11 @@ nav {
     border-radius: 1px;
 }
 
+.project-link-icons {
+    width: 20px;
+    height: 20px;
+}
+
 /* contact section */
 
 #contact-section {
@@ -342,17 +386,17 @@ nav {
 }
 
 .contact-section-name {
-    font-size: 14px;
+    font-size: 16px;
     font-family: "SF Mono Regular", Arial, Helvetica, sans-serif;
     padding-bottom: 30px;
     color: #ff3b3f;
 }
 
 .contact-headline {
+    font-family: "Calibre Semibold", Arial, Helvetica, sans-serif;
     font-size: 68px;
     font-weight: bold;
     padding-bottom: 30px;
-    font-weight: 800;
 }
 
 .contact-text {
@@ -372,6 +416,10 @@ footer a {
     margin: auto;
     font-family: "SF Mono Regular", Arial, Helvetica, sans-serif;
     font-size: 12px;
+}
+
+#social-icons-footer {
+    display: none;
 }
 
 /* fixed sidebars */
@@ -466,4 +514,38 @@ svg :hover {
 }
 .social-icon :hover {
     transform: translateY(-3px);
+}
+
+@media screen and (max-width: 1300px) {
+    #social-icons-fixed-bar-container {
+        display: none;
+    }
+
+    #email-fixed-bar-container {
+        display: none;
+    }
+
+    #social-icons-footer {
+        display: initial;
+    }
+
+    #social-icons-footer ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #social-icons-footer ul li {
+        padding: 0 10px 10px 0;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .hamburger {
+        display: inherit;
+    }
+
+    .navLink {
+        display: none;
+    }
 }
