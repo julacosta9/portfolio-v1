@@ -632,6 +632,10 @@ svg :hover {
         display: inherit;
     }
 
+    #navLinks {
+        z-index: 900;
+    }
+
     .navLink {
         display: none;
     }
@@ -644,6 +648,8 @@ svg :hover {
 
     #hero-tagline {
         font-size: 60px;
+        line-height: 1;
+        padding-bottom: 30px;
         
     }
     
@@ -722,4 +728,91 @@ svg :hover {
     }
 
 }
+
+/* Mobile Nav */
+
+#mobile-nav-wrapper {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    visibility: hidden;
+    z-index: 10;
+    outline: currentcolor none 0px;
+    /* transform: translateX(0vw); */
+    text-align: center;
+}
+
+aside {
+
+    display: flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 50px; */
+    height: 100%;
+    position: relative;
+    right: 0px;
+    margin-left: auto;
+    font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace;
+    box-shadow: rgba(2, 12, 27, 0.7) -10px 0px 30px -15px;
+    width: 70vw;
+    background-color: #8eaebd;    
+}
+
+aside nav {
+    padding: 0;
+}
+
+.mobile-nav-container {
+    display:flex;
+    flex-direction: column;
+    background-color: #8eaebd;
+}
+
+.mobile-nav-container ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+    line-height: .7;
+    
+}
+
+.mobile-nav-container ol li:before{
+    
+}
+
+.mobile-nav-container ol li {
+    padding-bottom: 50px;
+}
+
+.mobile-nav-section-numbers {
+    color: #ff3b3f;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    padding-top: 0px;
+}
+
+.mobile-nav-container a {
+    color: #FFFFFF;
+}
+
+.mobile-nav-button {
+        font-family: "SF Mono Regular", Arial, Helvetica, sans-serif;
+        border: 1px solid #ff3b3f;
+        border-radius: 5px;
+        color: #cf6766;
+        background: none;
+        padding: 1.25rem 3rem;
+        cursor: pointer;
+
+}
+
 

@@ -22,6 +22,35 @@
 <body>
 
     <div id="wrapper">
+        <div id="mobile-nav-wrapper">
+            <aside>
+                <nav class="mobile-nav-container">
+                    <ol>
+                        <li>
+                            <a class="mobile-nav-link" href="#about-section">
+                                <span class="mobile-nav-section-numbers">01.</span>
+                                <br />
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a class="mobile-nav-link" href="#experience-section"><span class="mobile-nav-section-numbers">02.</span>
+                                <br />Experience</a>
+                        </li>
+                        <li>
+                            <a class="mobile-nav-link" href="#projects-section"><span class="mobile-nav-section-numbers">03.</span>
+                                <br />Work</a>
+                        </li>
+                        <li>
+                            <a class="mobile-nav-link" href="#contact-section"><span class="mobile-nav-section-numbers">04.</span>
+                                <br />Contact</a>
+                        </li>
+                    </ol>
+                    <a href="assets/Resume - Julian Acosta.pdf" target="_blank"><button class="mobile-nav-link mobile-nav-button">Resume</button>
+                    </a>
+                </nav>
+            </aside>
+        </div>
         <div id="social-icons-fixed-bar-container">
             <ul class="social-icon-list">
                 <li class="social-icon">
@@ -65,13 +94,14 @@
                     <a class="navLink" href="#contact-section">04. Contact</a>
                     <a href="assets/Resume - Julian Acosta.pdf" target="_blank"><button class="navLink">Resume</button>
                     </a>
-                    <button class="hamburger hamburger--stand" type="button">
+                    <button id="mobile-menu-button" class="hamburger hamburger--stand" type="button">
                         <span class="hamburger-box">
                             <span class="hamburger-inner"></span>
                         </span>
                     </button>
                 </div>
             </nav>
+            
             <section id="hero-section">
                 <span id="hero-pre-text">Hi, my name is</span>
                 <h1 id="hero-name" class="hero-header-text">Julian Acosta.</h1>
@@ -157,8 +187,9 @@
                             <div class="project-description">
                                 <p>
                                     Weather dashboard that runs in the browser and features
-                                dynamically updated HTML and CSS. Uses the OpenWeather API to retrieve weather data for
-                                cities.
+                                    dynamically updated HTML and CSS. Uses the OpenWeather API to retrieve weather data
+                                    for
+                                    cities.
                                 </p>
                             </div>
                             <ul class="technology-list">
