@@ -108,8 +108,6 @@ window.addEventListener("load", function() {
                 ).innerHTML += `<li>${bullet}</li>`;
             });
 
-            // document.querySelectorAll(".job-button").classList.remove("job-button-selected");
-
             document
                 .querySelectorAll("#jobList li div")
                 .forEach(el => el.classList.remove("job-button-selected"));
