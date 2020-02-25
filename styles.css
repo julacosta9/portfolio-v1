@@ -747,6 +747,15 @@ footer a {
     .project-screenshot {
         width: 250%;
     }
+
+    button :hover {
+        background: inherit;
+        color:#ff533d;
+    }
+
+    #jobList :hover {
+        background: inherit;
+    }
 }
 
 /* Mobile Breakpoint */
