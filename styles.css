@@ -33,7 +33,7 @@
 }
 
 body {
-    background: #0f1626;
+    background: #18233c;
     color: #f5f5f5;
     font-family: "Calibre Regular", Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -181,7 +181,7 @@ aside {
     font-family: "SF Mono Regular", Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace;
     box-shadow: rgba(0, 0, 0, 0.7) -10px 0px 30px -15px;
     width: 70vw;
-    background-color: #162037;
+    background-color: #223255;
 }
 
 aside nav {
@@ -191,7 +191,7 @@ aside nav {
 .mobile-nav-container {
     display: flex;
     flex-direction: column;
-    background-color: #162037;
+    background-color: #223255;
 }
 
 .mobile-nav-container ol {
@@ -264,13 +264,13 @@ aside nav {
 }
 
 #hero-tagline {
-    color: #ab987a;
+    color: #BFB099;
     padding-bottom: 10px;
 }
 
 #subheader-text {
     font-size: 20px;
-    color: #ab987a;
+    color: #BFB099;
     width: 50%;
     padding-bottom: 60px;
 }
@@ -327,7 +327,7 @@ aside nav {
 }
 
 .jobDateRange {
-    color: #ab987a;
+    color: #BFB099;
 }
 
 #experience-content {
@@ -481,7 +481,7 @@ aside nav {
     font-size: 12px;
     font-family: "SF Mono Regular", Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace;
     padding-bottom: 10px;
-    color: #ab987a;
+    color: #BFB099;
 }
 
 .tech-item {
@@ -544,7 +544,7 @@ aside nav {
 /* Footer */
 
 footer {
-    background: #070a11;
+    background: #0f1626;
     /* width: 100%; */
     text-align: center;
     padding: 32px 0;
