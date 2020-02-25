@@ -748,12 +748,12 @@ footer a {
         width: 250%;
     }
 
-    button :hover {
-        background: inherit;
+    button:hover {
+        background: none;
         color:#ff533d;
     }
 
-    #jobList :hover {
+    #jobList:hover {
         background: inherit;
     }
 }
