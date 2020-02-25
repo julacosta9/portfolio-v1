@@ -84,7 +84,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 30px 50px;
+    padding: 30px 5vw;
     align-items: center;
     font-family: "SF Mono Regular", Arial, Helvetica, sans-serif;
     background: #031424;
@@ -123,7 +123,7 @@ nav {
     min-height: 100vh; */
 
     margin: 0px auto;
-    padding: 0px 10px 150px 10px;
+    padding: 0px 0px 150px 0px;
     max-width: 1000px;
     display: flex;
     -moz-box-pack: center;
@@ -148,7 +148,7 @@ nav {
 }
 
 #hero-name {
-    line-height: .9;
+    line-height: 1;
 }
 
 #hero-tagline {
@@ -536,16 +536,91 @@ svg :hover {
     }
 
     #social-icons-footer ul li {
-        padding: 0 10px 10px 0;
+        padding: 0 15px 10px 15px;
+    }
+
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    #hero-section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #about-section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #experience-section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #projects-section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #contact-section {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 
 @media screen and (max-width: 830px) {
+    body {
+        font-size: 18px;
+    }
+
     .hamburger {
         display: inherit;
     }
 
     .navLink {
         display: none;
+    }
+
+
+
+    .hero-header-text {
+        font-size: 70px;
+    }
+
+    #hero-tagline {
+        font-size: 70px;
+        
+    }
+    
+    #subheader-text {
+        width: 100%;
+    }
+
+    #about-content {
+        display: block;
+    }
+
+    #bio-para {
+        width: 80vw;
+    }
+
+    #headshot-container {
+        width: 70%;
+        margin: 0 auto;
+        max-width: 300px;
+        position: relative;
+    }
+
+    .contact-headline {
+        font-size: 46px;
+    }
+
+    .contact-section-name {
+        font-size: 14px;
+        font-family: "SF Mono Regular", Arial, Helvetica, sans-serif;
+        padding-bottom: 30px;
+        color: #ff3b3f;
     }
 }
