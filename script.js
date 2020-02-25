@@ -52,9 +52,7 @@ window.addEventListener("load", function() {
             companyURL: "https://www.itsupportpros.com/",
             title: "IT Project Manager",
             dateRange: "March 2020 - Present",
-            jobDetails: [
-                "To be added..."
-            ]
+            jobDetails: ["To be added..."]
         }
     ];
 
@@ -115,6 +113,10 @@ window.addEventListener("load", function() {
         }
     }
 
+    function svgHoverEffect(event) {
+        console.log(event);
+    }
+
     document.addEventListener(
         "click",
         function(event) {
@@ -132,6 +134,5 @@ window.addEventListener("load", function() {
         .addEventListener("click", toggleMobileMenu);
 
     let mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
-
     mobileNavLinks.forEach(el => el.addEventListener("click", hideMobileMenu));
 });
