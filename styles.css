@@ -572,6 +572,48 @@ svg :hover {
         padding-right: 30px;
         padding-bottom: 150px;
     }
+
+    .featured-project {
+        flex-direction: column-reverse;
+        /* align-items: start; */
+    }
+
+    .featured-project-details {
+        width: 100%;
+        /* text-align: left; */
+        z-index: 2;
+    }
+
+    .project-description {
+        /* margin-left: 0; */
+        width: 100%;
+        /* padding: 0 */
+        padding: 20px 0 20px 0px;
+    }
+
+    .project-description p {
+        margin-right: 15px;
+        margin-left: 10px;
+    }
+
+    .technology-list {
+        display: inline-flex;
+        margin: 0;
+        justify-content: start;
+    }
+
+    .tech-item {
+        padding: 0 20px 20px 0;
+        
+    }
+
+    .featured-project-details a {
+        /* position: absolute; */
+    }
+
+    .project-screenshot {
+        width: 250%;
+    }
 }
 
 @media screen and (max-width: 830px) {
@@ -597,16 +639,16 @@ svg :hover {
 
 
     .hero-header-text {
-        font-size: 70px;
+        font-size: 60px;
     }
 
     #hero-tagline {
-        font-size: 70px;
+        font-size: 60px;
         
     }
     
     #subheader-text {
-        width: 100%;
+        width: 80%;
     }
 
     #about-content {
