@@ -39,7 +39,7 @@ window.addEventListener("load", function() {
         {
             companyName: "RR Donnelley",
             companyURL: "https://www.rrd.com/",
-            title: "Technical Project Manager",
+            title: "Technology Project Manager",
             dateRange: "July 2012 - February 2017",
             jobDetails: [
                 "Managed efforts on projects in a deadline driven environment that marries digital technology and physical production",
