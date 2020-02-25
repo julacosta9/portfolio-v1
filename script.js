@@ -49,13 +49,11 @@ window.addEventListener("load", function() {
         },
         {
             companyName: "Excedeo",
-            companyURL: "https://www.rrd.com/",
-            title: "Technical Project Manager",
-            dateRange: "July 2012 - February 2017",
+            companyURL: "https://www.itsupportpros.com/",
+            title: "IT Project Manager",
+            dateRange: "March 2020 - Present",
             jobDetails: [
-                "Managed efforts on projects in a deadline driven environment that marries digital technology and physical production",
-                "Consulted with clients to identify key requirements, define project scope, and develop project plans",
-                "Acted as resolution point for change requests and clients concerns, and worked closely with department team leads to prioritizeissues and coordinate troubleshooting efforts"
+                "To be added..."
             ]
         }
     ];
@@ -65,7 +63,7 @@ window.addEventListener("load", function() {
             document.querySelector(
                 "#jobList"
             ).innerHTML += `<li data-index=${i}>
-                <div class="job-button">${workExperience[i].companyName}</div>
+                <div class="job-button ease-transition">${workExperience[i].companyName}</div>
             </li>`;
         }
 
@@ -75,7 +73,7 @@ window.addEventListener("load", function() {
 
         document.querySelector(
             ".jobTitle"
-        ).innerHTML = `${workExperience[0].title} <span class="at-symbol">@</span> <a href="${workExperience[0].companyURL}" target="_blank">${workExperience[0].companyName}</a>`;
+        ).innerHTML = `${workExperience[0].title} <span class="at-symbol">@</span> <a class="animate-links" href="${workExperience[0].companyURL}" target="_blank">${workExperience[0].companyName}</a>`;
 
         document.querySelector(".jobDateRange").textContent =
             workExperience[0].dateRange;
@@ -99,7 +97,7 @@ window.addEventListener("load", function() {
 
             document.querySelector(
                 ".jobTitle"
-            ).innerHTML = `${workExperience[index].title} <span class="at-symbol">@</span> <a href="${workExperience[index].companyURL}" target="_blank">${workExperience[index].companyName}</a>`;
+            ).innerHTML = `${workExperience[index].title} <span class="at-symbol">@</span> <a class="animate-links" href="${workExperience[index].companyURL}" target="_blank">${workExperience[index].companyName}</a>`;
 
             document.querySelector(".jobDateRange").textContent =
                 workExperience[index].dateRange;
