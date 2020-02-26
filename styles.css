@@ -486,7 +486,7 @@ aside nav {
     z-index: 2;
     display: flex;
     flex-wrap: wrap;
-    justify-content: end;
+    justify-content: flex-end;
     padding: 0px;
     margin: 25px 0px 10px;
     list-style: outside none none;
