@@ -237,7 +237,8 @@ aside nav {
     border-radius: 5px;
     color: #ff533d;
     background: none;
-    padding: 1.25rem 3rem;
+    padding: 1.25rem 2rem;
+    font-size: 13px;
     cursor: pointer;
 }
 
