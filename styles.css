@@ -428,18 +428,38 @@ aside nav {
     max-width: 1000px;
 }
 
-.featured-project {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    overflow: visible;
-    margin-bottom: 80px;
+.featured-project-card {
+	display: grid;
+	-moz-box-align: center;
+	grid-template-columns: repeat(12, 1fr);
+	margin-bottom: 100px;
+	align-items: center;
+}
+
+.featured-project-card a {
+    position: relative;
+	grid-column: 1 / 8;
+	grid-row: 1 / 2;
+	z-index: 9000;
+}
+
+.featured-project-card a img {
+    border-radius: 2px;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    vertical-align: bottom;
+    width: 100%;
+    max-width: 100%;
 }
 
 .featured-project-details {
-    width: 60%;
-    text-align: right;
-    z-index: 2;
+    position: relative;
+	grid-column: 8 / 12;
+	grid-row: 1 / -1;
+	text-align: right;
+	background: #28385E;
+	padding: 30px 20px;
+	border-radius: 0 2px 2px 0;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .align-left {
@@ -481,6 +501,13 @@ aside nav {
     color: #ff533d;
 }
 
+.project-title-small {
+    font-size: 27px;
+}
+
+.project-description-small {
+    font-size: 19px;
+}
 .technology-list {
     position: relative;
     z-index: 2;
@@ -500,7 +527,7 @@ aside nav {
     padding-left: 20px;
 }
 
-.project-description {
+/* .project-description {
     padding: 20px 20px;
     background: #28468e;
     width: 72%;
@@ -508,7 +535,7 @@ aside nav {
     border-radius: 3px;
     box-shadow: rgba(0, 1, 2, 0.7) 0px 10px 30px -15px;
     margin-bottom: 20px;
-}
+} */
 
 .featured-project-screenshot {
     width: 40%;
@@ -524,6 +551,7 @@ aside nav {
 .project-link-icons {
     width: 20px;
     height: 20px;
+    vertical-align: middle;
 }
 
 /* Contact Section */
