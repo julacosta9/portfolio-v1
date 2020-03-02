@@ -961,6 +961,10 @@ footer a {
         font-size: 20px;
     }
 
+    #job-bulletpoints {
+        width: 100%;
+    }
+
     .project-title {
         font-size: 30px;
     }
