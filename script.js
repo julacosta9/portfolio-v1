@@ -2,6 +2,7 @@ window.addEventListener("load", function() {
     function showMobileMenu() {
         var nav = document.getElementById("mobile-nav-wrapper");
         nav.style.visibility = "visible";
+        nav.style.transform = "translateX(0vw)";
         document
             .querySelector("#mobile-menu-button")
             .classList.add("is-active");
@@ -10,6 +11,7 @@ window.addEventListener("load", function() {
     function hideMobileMenu() {
         var nav = document.getElementById("mobile-nav-wrapper");
         nav.style.visibility = "hidden";
+        nav.style.transform = "translateX(100vw)";
         document
             .querySelector("#mobile-menu-button")
             .classList.remove("is-active");
