@@ -450,7 +450,7 @@ aside nav {
     position: relative;
 	grid-column: 1 / 8;
 	grid-row: 1 / 2;
-	/* z-index: 9000; */
+	z-index: 10;
 }
 
 .featured-project-card a img {
@@ -808,6 +808,41 @@ footer a {
     }
 }
 
+@media screen and (max-width: 1000px) {
+
+    .featured-project-card {
+        grid-template-rows: repeat(2);
+    }
+    
+    .featured-project-card a {
+        position: relative;
+        grid-column: 1 / 13;
+        grid-row: 1 / 2;
+    }
+
+    .featured-project-details {
+        grid-column: 2 / 12;
+        grid-row: 2 / 3;
+        width: unset;
+        text-align: left;
+        border-radius: 0 0 2px 2px;
+        padding-bottom: 15px;
+    }
+
+    .project-title {
+        padding-bottom: 0px;
+    }
+
+    .project-description p {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .technology-list {
+        display: flex;
+    }
+}
+
 /* Mobile Breakpoint */
 
 @media screen and (max-width: 830px) {
@@ -825,7 +860,7 @@ footer a {
 
     .section-headline {
         font-family: "Calibre Regular", Arial, Helvetica, sans-serif;
-        font-size: 24px;
+        font-size: 25px;
         padding-bottom: 40px;
         font-weight: bold;
     }
@@ -924,6 +959,14 @@ footer a {
 
     .jobTitle {
         font-size: 20px;
+    }
+
+    .project-title {
+        font-size: 30px;
+    }
+
+    .feature-text {
+        font-size: 12px;
     }
 }
 
