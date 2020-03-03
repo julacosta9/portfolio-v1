@@ -22,14 +22,14 @@ window.addEventListener("load", function() {
                 "Consulted with clients to identify key requirements, define project scope, and develop project plans",
                 "Acted as resolution point for change requests and clients concerns, and worked closely with department team leads to prioritizeissues and coordinate troubleshooting efforts"
             ]
-        },
-        {
-            companyName: "Excedeo",
-            companyURL: "https://www.itsupportpros.com/",
-            title: "IT Project Manager",
-            dateRange: "March 2020 - Present",
-            jobDetails: ["To be added..."]
         }
+        // {
+        //     companyName: "Excedeo",
+        //     companyURL: "https://www.itsupportpros.com/",
+        //     title: "IT Project Manager",
+        //     dateRange: "March 2020 - Present",
+        //     jobDetails: ["To be added..."]
+        // }
     ];
     
     function showMobileMenu() {
