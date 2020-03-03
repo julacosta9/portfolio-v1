@@ -1,30 +1,4 @@
 window.addEventListener("load", function() {
-    function showMobileMenu() {
-        var nav = document.getElementById("mobile-nav-wrapper");
-        nav.style.visibility = "visible";
-        nav.style.transform = "translateX(0vw)";
-        document
-            .querySelector("#mobile-menu-button")
-            .classList.add("is-active");
-    }
-
-    function hideMobileMenu() {
-        var nav = document.getElementById("mobile-nav-wrapper");
-        nav.style.visibility = "hidden";
-        nav.style.transform = "translateX(100vw)";
-        document
-            .querySelector("#mobile-menu-button")
-            .classList.remove("is-active");
-    }
-
-    function toggleMobileMenu() {
-        var nav = document.getElementById("mobile-nav-wrapper");
-        if (nav.style.visibility === "visible") {
-            hideMobileMenu();
-        } else {
-            showMobileMenu();
-        }
-    }
 
     const workExperience = [
         {
@@ -57,7 +31,34 @@ window.addEventListener("load", function() {
             jobDetails: ["To be added..."]
         }
     ];
+    
+    function showMobileMenu() {
+        var nav = document.getElementById("mobile-nav-wrapper");
+        nav.style.visibility = "visible";
+        nav.style.transform = "translateX(0vw)";
+        document
+            .querySelector("#mobile-menu-button")
+            .classList.add("is-active");
+    }
 
+    function hideMobileMenu() {
+        var nav = document.getElementById("mobile-nav-wrapper");
+        nav.style.visibility = "hidden";
+        nav.style.transform = "translateX(100vw)";
+        document
+            .querySelector("#mobile-menu-button")
+            .classList.remove("is-active");
+    }
+
+    function toggleMobileMenu() {
+        var nav = document.getElementById("mobile-nav-wrapper");
+        if (nav.style.visibility === "visible") {
+            hideMobileMenu();
+        } else {
+            showMobileMenu();
+        }
+    }
+    
     const initExperienceSection = () => {
         for (let i = 0; i < workExperience.length; i++) {
             document.querySelector(
@@ -89,7 +90,7 @@ window.addEventListener("load", function() {
         if (event.target.matches(".job-button-selected")) {
             return;
         } else {
-            console.log(event);
+            // console.log(event);
             document.querySelector("#job-bulletpoints ul").innerHTML = "";
 
             let index =
@@ -115,9 +116,9 @@ window.addEventListener("load", function() {
         }
     }
 
-    function svgHoverEffect(event) {
-        console.log(event);
-    }
+    // function svgHoverEffect(event) {
+    //     console.log(event);
+    // }
 
     document.addEventListener(
         "click",
@@ -129,12 +130,13 @@ window.addEventListener("load", function() {
         false
     );
 
-    initExperienceSection();
-
     document
         .querySelector("#mobile-menu-button")
         .addEventListener("click", toggleMobileMenu);
 
     let mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
     mobileNavLinks.forEach(el => el.addEventListener("click", hideMobileMenu));
+
+    initExperienceSection();
+
 });
