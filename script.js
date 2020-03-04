@@ -8,7 +8,7 @@ window.addEventListener("load", function() {
             dateRange: "February 2017 - November 2019",
             jobDetails: [
                 "Managed planning, execution, team meetings, and client communications for multiple and concurrent cross-functional projects",
-                "Developed detailed project plans for both Agile and Waterfall projects, coordinated project activities, and identified resourcesneeded to complete project tasks",
+                "Developed detailed project plans for both Agile and Waterfall projects, coordinated project activities, and identified resources needed to complete project tasks",
                 "Oversaw the design, development, and launch of an e-commerce website for a skincare company"
             ]
         },
@@ -20,7 +20,7 @@ window.addEventListener("load", function() {
             jobDetails: [
                 "Managed efforts on projects in a deadline driven environment that marries digital technology and physical production",
                 "Consulted with clients to identify key requirements, define project scope, and develop project plans",
-                "Acted as resolution point for change requests and clients concerns, and worked closely with department team leads to prioritizeissues and coordinate troubleshooting efforts"
+                "Acted as resolution point for change requests and clients concerns, and worked closely with department team leads to prioritize issues and coordinate troubleshooting efforts"
             ]
         }
         // {
