@@ -327,6 +327,7 @@ aside nav {
 
 #bio-para {
     width: 45%;
+    padding-right: 20px;
 }
 
 #bio-para p {
@@ -336,7 +337,7 @@ aside nav {
 #headshot-container {
     width: 40%;
     margin-left: auto;
-    margin-right: 170px;
+    margin-right: auto;
     max-width: 300px;
     position: relative;
 }
