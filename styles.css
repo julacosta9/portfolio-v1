@@ -363,7 +363,7 @@ aside nav {
 }
 
 .tech-skills-list li::before {
-    content: "▹";
+    content: "⦿";
     color: #ff533d;
     position: relative;
     padding: 0 10px 0 0;
@@ -416,7 +416,7 @@ aside nav {
 }
 
 #job-bulletpoints ul li::before {
-    content: "▹";
+    content: "⦿";
     position: absolute;
     left: 0px;
     color: #ff533d;
