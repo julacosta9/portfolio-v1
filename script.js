@@ -7,10 +7,11 @@ window.addEventListener("load", function() {
             title: "Technical Project Manager",
             dateRange: "February 2017 - November 2019",
             jobDetails: [
-                "Managed planning, execution, team meetings, and client communications for multiple and concurrent cross-functional projects",
-                "Developed detailed project plans for both Agile and Waterfall projects, coordinated project activities, and identified resources needed to complete project tasks",
-                "Oversaw the design, development, and launch of an e-commerce website for a skincare company"
+                "Managed agile and waterfall web development projects for multiple clients at a time.",
+                "Oversaw the design, development, and launch of an e-commerce website for a skincare company.",
+                "Spearheaded the internal effort to evolve the company’s internal resourcing and delivery monitoring processes through the integration of business intelligence tools. This allowed leadership to be more agile in response to ever-changing resourcing needs."
             ]
+
         },
         {
             companyName: "RR Donnelley",
@@ -18,10 +19,14 @@ window.addEventListener("load", function() {
             title: "Technology Project Manager",
             dateRange: "July 2012 - February 2017",
             jobDetails: [
-                "Managed efforts on projects in a deadline driven environment that marries digital technology and physical production",
-                "Consulted with clients to identify key requirements, define project scope, and develop project plans",
-                "Acted as resolution point for change requests and clients concerns, and worked closely with department team leads to prioritize issues and coordinate troubleshooting efforts"
+                "Led technology projects in a deadline driven environment that married digital technology and physical production.",
+                "Coordinated a large-scale project for a Fortune 500 company from inception through completion and was responsible for reporting project status to senior management.",
+                "Maintained and enhanced client websites using HTML, CSS, JavaScript, and jQuery."
             ]
+
+
+
+
         }
         // {
         //     companyName: "Excedeo",
