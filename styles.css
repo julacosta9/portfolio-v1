@@ -501,7 +501,7 @@ aside nav {
 	grid-row: 1 / -1;
 	text-align: right;
 	background: #28385E;
-	padding: 30px 20px;
+	padding: 20px 20px;
 	border-radius: 0 2px 2px 0;
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
 }
@@ -547,6 +547,28 @@ aside nav {
 
 .project-title-small {
     font-size: 27px;
+}
+
+.badge-container {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: end;
+	margin-bottom: 10px;
+}
+
+.badge-container a img {
+    border-radius: unset;
+    box-shadow: unset;
+}
+
+#chrome-browser-badge {
+    width: 150px;
+    margin-right: 15px;
+}
+
+#firefox-browser-badge {
+    width: 123px;
 }
 
 .project-description-small {
@@ -805,6 +827,7 @@ footer a {
     .tech-item {
         padding: 0 20px 20px 0;
     }
+    
 
     .featured-project-details a {
         /* position: absolute; */
@@ -852,6 +875,25 @@ footer a {
     .project-description p {
         margin-right: 0px;
         margin-left: 0px;
+    }
+
+    .badge-container {
+        justify-content: start;
+        flex-direction: column;
+    }
+
+    .badge-container a img {
+        border-radius: unset;
+        box-shadow: unset;
+    }
+
+    #chrome-browser-badge {
+        margin-bottom: 10px;
+        width: 200px;
+    }
+
+    #firefox-browser-badge {
+        width: 200px;
     }
 
     .technology-list {
