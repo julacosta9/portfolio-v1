@@ -1,4 +1,4 @@
-# [julianacosta.dev](julianacosta.dev) [![Netlify Status](https://api.netlify.com/api/v1/badges/a9028886-583f-4138-bad8-07d1374455fe/deploy-status)](https://app.netlify.com/sites/pensive-leavitt-c3de6b/deploys)
+# [julianacosta.dev](https://www.julianacosta.dev) [![Netlify Status](https://api.netlify.com/api/v1/badges/a9028886-583f-4138-bad8-07d1374455fe/deploy-status)](https://app.netlify.com/sites/pensive-leavitt-c3de6b/deploys)
 
 My first personal portfolio site hosted with [Netlify](https://www.netlify.com/).
 
