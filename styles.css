@@ -375,7 +375,7 @@ aside nav {
 #experience-section {
     padding: 150px 10px;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 .at-symbol {
@@ -388,16 +388,17 @@ aside nav {
 
 #experience-content {
     display: flex;
+    justify-content: space-between;
     align-items: flex-start;
     padding: 30px 0px;
 }
 
 #job-button-container {
-    width: 30%;
+    /* width: 30%; */
 }
 
 #jobList {
-    width: 85%;
+    width: 100%;
 }
 
 #jobList :hover {
@@ -406,7 +407,7 @@ aside nav {
 }
 
 #job-bulletpoints {
-    width: 90%;
+    width: 70%;
 }
 
 #job-bulletpoints ul li {
@@ -612,7 +613,7 @@ aside nav {
 /* Contact Section */
 
 #contact-section {
-    padding: 150px 10px;
+    padding: 180px 10px;
     margin: 0 auto;
     max-width: 600px;
     text-align: center;
@@ -988,6 +989,11 @@ footer a {
         position: relative;
     }
 
+    #jobList li {
+        flex-shrink: 0;
+        margin-right: 30px;
+    }
+
     #joblist ul li {
         border-bottom: 1px solid red;
     }
@@ -999,7 +1005,7 @@ footer a {
 
     .job-button {
         padding: 15px 0px;
-        margin-right: 45px;
+        /* margin-right: 45px; */
     }
 
     .job-button-selected {

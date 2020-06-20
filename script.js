@@ -2,6 +2,13 @@ window.addEventListener("load", function() {
 
     const workExperience = [
         {
+            companyName: "alwaysAI",
+            companyURL: "https://www.alwaysai.co/",
+            title: "Web Development Intern",
+            dateRange: "June 2020 - Present",
+            jobDetails: ["To be added..."]
+        },
+        {
             companyName: "Red Door Interactive",
             companyURL: "https://www.reddoor.biz/",
             title: "Technical Project Manager",
@@ -22,13 +29,6 @@ window.addEventListener("load", function() {
                 "Coordinated a large-scale project for a Fortune 500 company from inception through completion and was responsible for reporting project status to senior management.",
                 "Maintained and enhanced client websites using HTML, CSS, JavaScript, and jQuery."
             ]
-        },
-        {
-            companyName: "alwaysAI",
-            companyURL: "https://www.alwaysai.co/",
-            title: "Web Development Intern",
-            dateRange: "June 2020 - Present",
-            jobDetails: ["To be added..."]
         }
     ];
     
