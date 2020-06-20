@@ -6,7 +6,6 @@
         url("fonts/calibre-cufonfonts-webfont/CalibreRegular.woff")
             format("woff");
     font-display: swap;
-    
 }
 
 @font-face {
@@ -30,10 +29,11 @@
 }
 
 @font-face {
-    font-family: 'SF Mono Light';
+    font-family: "SF Mono Light";
     font-style: normal;
     font-weight: normal;
-    src: local('SF Mono Light'), url('fonts/sf-mono-cufonfonts-webfont/SFMonoLight.woff') format('woff');
+    src: local("SF Mono Light"),
+        url("fonts/sf-mono-cufonfonts-webfont/SFMonoLight.woff") format("woff");
     font-display: swap;
 }
 
@@ -52,7 +52,6 @@ a {
 }
 
 a:hover {
-    /* text-decoration: underline; */
     color: #ff533d;
     cursor: pointer;
 }
@@ -136,15 +135,15 @@ svg :hover {
 
 nav {
     display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	padding: 20px 0;
-	align-items: center;
-	font-family: "SF Mono Regular", Arial, Helvetica, sans-serif;
-	background: inherit;
-	position: fixed;
-	width: 100%;
-	background: #18233c;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+    font-family: "SF Mono Regular", Arial, Helvetica, sans-serif;
+    background: inherit;
+    position: fixed;
+    width: 100%;
+    background: #18233c;
     box-shadow: rgb(9, 21, 49) 0px 10px 30px -10px;
     z-index: 100;
 }
@@ -189,7 +188,7 @@ nav {
     right: 0px;
     width: 100%;
     height: 100vh;
-    transition: all 0.20s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
     visibility: hidden;
     outline: currentcolor none 0px;
     text-align: center;
@@ -211,6 +210,16 @@ aside {
     box-shadow: rgba(0, 0, 0, 0.7) -10px 0px 30px -15px;
     width: 65vw;
     background-color: #223255;
+}
+
+#mobile-nav-tap-close-background {
+    position: fixed;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 aside nav {
@@ -295,13 +304,13 @@ aside nav {
 }
 
 #hero-tagline {
-    color: #BFB099;
+    color: #bfb099;
     padding-bottom: 10px;
 }
 
 #subheader-text {
     font-size: 20px;
-    color: #BFB099;
+    color: #bfb099;
     width: 50%;
     padding-bottom: 60px;
 }
@@ -315,7 +324,7 @@ aside nav {
 
 #about-section {
     padding: 100px 10px 150px 10px;
-    margin: 0 auto;
+    margin: 0 auto 12vh auto;
     max-width: 1000px;
 }
 
@@ -374,8 +383,8 @@ aside nav {
 
 #experience-section {
     padding: 150px 10px;
-    margin: 0 auto;
-    max-width: 800px;
+    margin: 0 auto 12vh auto;
+    max-width: 1000px;
 }
 
 .at-symbol {
@@ -383,21 +392,18 @@ aside nav {
 }
 
 .jobDateRange {
-    color: #BFB099;
+    color: #bfb099;
 }
 
 #experience-content {
     display: flex;
+    justify-content: space-between;
     align-items: flex-start;
     padding: 30px 0px;
 }
 
-#job-button-container {
-    width: 30%;
-}
-
 #jobList {
-    width: 85%;
+    width: 100%;
 }
 
 #jobList :hover {
@@ -406,7 +412,7 @@ aside nav {
 }
 
 #job-bulletpoints {
-    width: 90%;
+    width: 70%;
 }
 
 #job-bulletpoints ul li {
@@ -473,23 +479,23 @@ aside nav {
 }
 
 .featured-project-card {
-	display: grid;
-	-moz-box-align: center;
-	grid-template-columns: repeat(12, 1fr);
-	margin-bottom: 100px;
-	align-items: center;
+    display: grid;
+    -moz-box-align: center;
+    grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 100px;
+    align-items: center;
 }
 
 .featured-project-card a {
     position: relative;
-	grid-column: 1 / 8;
-	grid-row: 1 / 2;
-	z-index: 10;
+    grid-column: 1 / 8;
+    grid-row: 1 / 2;
+    z-index: 10;
 }
 
 .featured-project-card a img {
     border-radius: 2px;
-	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
     vertical-align: bottom;
     width: 100%;
     max-width: 100%;
@@ -497,13 +503,13 @@ aside nav {
 
 .featured-project-details {
     position: relative;
-	grid-column: 8 / 12;
-	grid-row: 1 / -1;
-	text-align: right;
-	background: #28385E;
-	padding: 20px 20px;
-	border-radius: 0 2px 2px 0;
-	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    grid-column: 8 / 12;
+    grid-row: 1 / -1;
+    text-align: right;
+    background: #28385e;
+    padding: 20px 20px;
+    border-radius: 0 2px 2px 0;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .align-left {
@@ -550,11 +556,11 @@ aside nav {
 }
 
 .badge-container {
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: end;
-	margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    margin-bottom: 10px;
 }
 
 .badge-container a img {
@@ -585,7 +591,7 @@ aside nav {
     font-size: 12px;
     font-family: "SF Mono Regular", Arial, Helvetica, sans-serif;
     padding-bottom: 10px;
-    color: #BFB099;
+    color: #bfb099;
 }
 
 .tech-item {
@@ -612,8 +618,8 @@ aside nav {
 /* Contact Section */
 
 #contact-section {
-    padding: 150px 10px;
-    margin: 0 auto;
+    padding: 180px 10px;
+    margin: 14vh auto 14vh auto;
     max-width: 600px;
     text-align: center;
 }
@@ -688,7 +694,6 @@ footer a {
     bottom: 0px;
     left: auto;
     right: 40px;
-    /* z-index: 10; */
     font-family: "SF Mono Light", Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
@@ -827,11 +832,6 @@ footer a {
     .tech-item {
         padding: 0 20px 20px 0;
     }
-    
-
-    .featured-project-details a {
-        /* position: absolute; */
-    }
 
     .project-screenshot {
         width: 250%;
@@ -839,7 +839,7 @@ footer a {
 
     button:hover {
         background: none;
-        color:#ff533d;
+        color: #ff533d;
     }
 
     #jobList :hover {
@@ -848,11 +848,10 @@ footer a {
 }
 
 @media screen and (max-width: 1000px) {
-
     .featured-project-card {
         grid-template-rows: repeat(2);
     }
-    
+
     .featured-project-card a {
         position: relative;
         grid-column: 1 / 13;
@@ -958,7 +957,7 @@ footer a {
     }
 
     #headshot-container {
-        width: 70%;
+        width: 80%;
         margin: 0 auto;
         max-width: 300px;
         position: relative;
@@ -988,6 +987,11 @@ footer a {
         position: relative;
     }
 
+    #jobList li {
+        flex-shrink: 0;
+        margin-right: 30px;
+    }
+
     #joblist ul li {
         border-bottom: 1px solid red;
     }
@@ -999,7 +1003,6 @@ footer a {
 
     .job-button {
         padding: 15px 0px;
-        margin-right: 45px;
     }
 
     .job-button-selected {
@@ -1031,7 +1034,6 @@ footer a {
 }
 
 @media screen and (max-width: 500px) {
-
     .navContainer {
         width: 86vw;
         margin: 0 auto 0 auto;
