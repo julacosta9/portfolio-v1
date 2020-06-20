@@ -153,6 +153,11 @@ window.addEventListener("load", function() {
         .querySelector("#mobile-menu-button")
         .addEventListener("click", toggleMobileMenu);
 
+    document
+        .querySelector("#mobile-nav-tap-close-background")
+        .addEventListener("click", toggleMobileMenu);
+        
+
     let mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
     mobileNavLinks.forEach(el => el.addEventListener("click", hideMobileMenu));
 
