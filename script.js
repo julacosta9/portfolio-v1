@@ -116,15 +116,34 @@ window.addEventListener("load", function() {
         }
     }
 
-    // function svgHoverEffect(event) {
-    //     console.log(event);
-    // }
+    function smoothScrollToCenter(elementId) {
+        const el = document.getElementById(elementId);
+
+        const position = (elementId === "projects-section") ? 'start' : 'center'
+
+        el.scrollIntoView({
+            behavior: "smooth",
+            block: position,
+            inline: position
+          });
+    }
 
     document.addEventListener(
         "click",
         function(event) {
             if (event.target.matches(".job-button")) {
                 renderExperienceSection(event);
+            }
+        },
+        false
+    );
+
+    document.addEventListener(
+        "click",
+        function(event) {
+            if (event.target.matches(".navLink")) {
+                console.log(event.target.attributes[1].value)
+                smoothScrollToCenter(event.target.attributes[1].value);
             }
         },
         false

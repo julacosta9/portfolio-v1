@@ -315,7 +315,7 @@ aside nav {
 
 #about-section {
     padding: 100px 10px 150px 10px;
-    margin: 0 auto;
+    margin: 0 auto 12vh auto;
     max-width: 1000px;
 }
 
@@ -374,7 +374,7 @@ aside nav {
 
 #experience-section {
     padding: 150px 10px;
-    margin: 0 auto;
+    margin: 0 auto 12vh auto;
     max-width: 1000px;
 }
 
@@ -614,7 +614,7 @@ aside nav {
 
 #contact-section {
     padding: 180px 10px;
-    margin: 0 auto;
+    margin: 14vh auto 14vh auto;
     max-width: 600px;
     text-align: center;
 }
