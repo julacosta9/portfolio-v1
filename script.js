@@ -1,12 +1,11 @@
-window.addEventListener("load", function() {
-
+window.addEventListener("load", function () {
     const workExperience = [
         {
             companyName: "alwaysAI",
             companyURL: "https://www.alwaysai.co/",
             title: "Web Development Intern",
             dateRange: "June 2020 - Present",
-            jobDetails: ["To be added..."]
+            jobDetails: ["To be added..."],
         },
         {
             companyName: "Red Door Interactive",
@@ -16,8 +15,8 @@ window.addEventListener("load", function() {
             jobDetails: [
                 "Managed agile and waterfall web development projects for multiple clients at a time.",
                 "Oversaw the design, development, and launch of an e-commerce website for a skincare company.",
-                "Spearheaded the internal effort to evolve the company’s internal resourcing and delivery monitoring processes through the integration of business intelligence tools. This allowed leadership to be more agile in response to ever-changing resourcing needs."
-            ]
+                "Spearheaded the internal effort to evolve the company’s internal resourcing and delivery monitoring processes through the integration of business intelligence tools. This allowed leadership to be more agile in response to ever-changing resourcing needs.",
+            ],
         },
         {
             companyName: "RR Donnelley",
@@ -27,11 +26,11 @@ window.addEventListener("load", function() {
             jobDetails: [
                 "Led technology projects in a deadline driven environment that married digital technology and physical production.",
                 "Coordinated a large-scale project for a Fortune 500 company from inception through completion and was responsible for reporting project status to senior management.",
-                "Maintained and enhanced client websites using HTML, CSS, JavaScript, and jQuery."
-            ]
-        }
+                "Maintained and enhanced client websites using HTML, CSS, JavaScript, and jQuery.",
+            ],
+        },
     ];
-    
+
     function showMobileMenu() {
         var nav = document.getElementById("mobile-nav-wrapper");
         nav.style.visibility = "visible";
@@ -58,7 +57,7 @@ window.addEventListener("load", function() {
             showMobileMenu();
         }
     }
-    
+
     const initExperienceSection = () => {
         for (let i = 0; i < workExperience.length; i++) {
             document.querySelector(
@@ -79,7 +78,7 @@ window.addEventListener("load", function() {
         document.querySelector(".jobDateRange").textContent =
             workExperience[0].dateRange;
 
-        workExperience[0].jobDetails.forEach(bullet => {
+        workExperience[0].jobDetails.forEach((bullet) => {
             document.querySelector(
                 "#job-bulletpoints ul"
             ).innerHTML += `<li>${bullet}</li>`;
@@ -103,7 +102,7 @@ window.addEventListener("load", function() {
             document.querySelector(".jobDateRange").textContent =
                 workExperience[index].dateRange;
 
-            workExperience[index].jobDetails.forEach(bullet => {
+            workExperience[index].jobDetails.forEach((bullet) => {
                 document.querySelector(
                     "#job-bulletpoints ul"
                 ).innerHTML += `<li>${bullet}</li>`;
@@ -111,7 +110,7 @@ window.addEventListener("load", function() {
 
             document
                 .querySelectorAll("#jobList li div")
-                .forEach(el => el.classList.remove("job-button-selected"));
+                .forEach((el) => el.classList.remove("job-button-selected"));
             event.target.classList.add("job-button-selected");
         }
     }
@@ -119,18 +118,18 @@ window.addEventListener("load", function() {
     function smoothScrollToCenter(elementId) {
         const el = document.getElementById(elementId);
 
-        const position = (elementId === "projects-section") ? 'start' : 'center'
+        const position = elementId === "projects-section" ? "start" : "center";
 
         el.scrollIntoView({
             behavior: "smooth",
             block: position,
-            inline: position
-          });
+            inline: position,
+        });
     }
 
     document.addEventListener(
         "click",
-        function(event) {
+        function (event) {
             if (event.target.matches(".job-button")) {
                 renderExperienceSection(event);
             }
@@ -140,9 +139,9 @@ window.addEventListener("load", function() {
 
     document.addEventListener(
         "click",
-        function(event) {
+        function (event) {
             if (event.target.matches(".navLink")) {
-                console.log(event.target.attributes[1].value)
+                console.log(event.target.attributes[1].value);
                 smoothScrollToCenter(event.target.attributes[1].value);
             }
         },
@@ -155,12 +154,12 @@ window.addEventListener("load", function() {
 
     document
         .querySelector("#mobile-nav-tap-close-background")
-        .addEventListener("click", toggleMobileMenu);
-        
+        .addEventListener("click", hideMobileMenu);
 
     let mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
-    mobileNavLinks.forEach(el => el.addEventListener("click", hideMobileMenu));
+    mobileNavLinks.forEach((el) =>
+        el.addEventListener("click", hideMobileMenu)
+    );
 
     initExperienceSection();
-
 });
