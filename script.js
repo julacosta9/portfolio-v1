@@ -11,7 +11,6 @@ window.addEventListener("load", function() {
                 "Oversaw the design, development, and launch of an e-commerce website for a skincare company.",
                 "Spearheaded the internal effort to evolve the company’s internal resourcing and delivery monitoring processes through the integration of business intelligence tools. This allowed leadership to be more agile in response to ever-changing resourcing needs."
             ]
-
         },
         {
             companyName: "RR Donnelley",
@@ -23,18 +22,14 @@ window.addEventListener("load", function() {
                 "Coordinated a large-scale project for a Fortune 500 company from inception through completion and was responsible for reporting project status to senior management.",
                 "Maintained and enhanced client websites using HTML, CSS, JavaScript, and jQuery."
             ]
-
-
-
-
+        },
+        {
+            companyName: "alwaysAI",
+            companyURL: "https://www.alwaysai.co/",
+            title: "Web Development Intern",
+            dateRange: "June 2020 - Present",
+            jobDetails: ["To be added..."]
         }
-        // {
-        //     companyName: "Excedeo",
-        //     companyURL: "https://www.itsupportpros.com/",
-        //     title: "IT Project Manager",
-        //     dateRange: "March 2020 - Present",
-        //     jobDetails: ["To be added..."]
-        // }
     ];
     
     function showMobileMenu() {
