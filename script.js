@@ -5,7 +5,7 @@ window.addEventListener("load", function () {
             companyURL: "https://www.alwaysai.co/",
             title: "Web Development Intern",
             dateRange: "June 2020 - Present",
-            jobDetails: ["To be added..."],
+            jobDetails: ["Rebuilt blog from ground up using React, Next.js, and HubSpot as a headless CMS. Collaborated with designers, worked from wireframes in inVision, and demoed progress to leadership.", "Assist in various web development and QA tasks across alwaysAI web platforms."],
         },
         {
             companyName: "Red Door Interactive",
