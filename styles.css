@@ -982,9 +982,10 @@ footer a {
 
     #jobList {
         display: flex;
+        position: relative;
         align-items: end;
         overflow-x: scroll;
-        position: relative;
+        scrollbar-width: none;
     }
 
     #jobList li {
