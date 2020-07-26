@@ -5,7 +5,10 @@ window.addEventListener("load", function () {
             companyURL: "https://www.alwaysai.co/",
             title: "Web Development Intern",
             dateRange: "June 2020 - Present",
-            jobDetails: ["Rebuilt blog from ground up using React, Next.js, and HubSpot as a headless CMS. Collaborated with designers, worked from wireframes in inVision, and demoed progress to leadership.", "Assist in various web development and QA tasks across alwaysAI web platforms."],
+            jobDetails: [
+                "Rebuilt blog from ground up using React, Next.js, and HubSpot as a headless CMS. Collaborated with designers, worked from wireframes in inVision, and demoed progress to leadership.",
+                "Assist in various web development and QA tasks across alwaysAI web platforms.",
+            ],
         },
         {
             companyName: "Red Door Interactive",
@@ -58,7 +61,22 @@ window.addEventListener("load", function () {
         }
     }
 
+    function addLineBreak() {
+        let isMobile = window.matchMedia("(max-width: 500px)").matches;
+        let mobileLineBreak = "";
+
+        if (isMobile) {
+            mobileLineBreak = "<br />";
+        } else {
+            mobileLineBreak = "";
+        }
+
+        return mobileLineBreak;
+    }
+
     const initExperienceSection = () => {
+        let br = addLineBreak();
+
         for (let i = 0; i < workExperience.length; i++) {
             document.querySelector(
                 "#jobList"
@@ -73,7 +91,7 @@ window.addEventListener("load", function () {
 
         document.querySelector(
             ".jobTitle"
-        ).innerHTML = `${workExperience[0].title} <span class="at-symbol">@</span> <a class="animate-links" href="${workExperience[0].companyURL}" target="_blank">${workExperience[0].companyName}</a>`;
+        ).innerHTML = `${workExperience[0].title} ${br} <span class="at-symbol">@</span> <a class="animate-links" href="${workExperience[0].companyURL}" target="_blank">${workExperience[0].companyName}</a>`;
 
         document.querySelector(".jobDateRange").textContent =
             workExperience[0].dateRange;
@@ -89,7 +107,8 @@ window.addEventListener("load", function () {
         if (event.target.matches(".job-button-selected")) {
             return;
         } else {
-            // console.log(event);
+            let br = addLineBreak();
+
             document.querySelector("#job-bulletpoints ul").innerHTML = "";
 
             let index =
@@ -97,7 +116,7 @@ window.addEventListener("load", function () {
 
             document.querySelector(
                 ".jobTitle"
-            ).innerHTML = `${workExperience[index].title} <span class="at-symbol">@</span> <a class="animate-links" href="${workExperience[index].companyURL}" target="_blank">${workExperience[index].companyName}</a>`;
+            ).innerHTML = `${workExperience[index].title} ${br} <span class="at-symbol">@</span> <a class="animate-links" href="${workExperience[index].companyURL}" target="_blank">${workExperience[index].companyName}</a>`;
 
             document.querySelector(".jobDateRange").textContent =
                 workExperience[index].dateRange;
