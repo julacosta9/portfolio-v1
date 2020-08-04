@@ -6,7 +6,7 @@ window.addEventListener("load", function () {
             title: "Web Development Intern",
             dateRange: "June 2020 - Present",
             jobDetails: [
-                "Rebuilt blog from ground up using React, Next.js, and HubSpot as a headless CMS. Collaborated with designers, worked from wireframes in inVision, and demoed progress to leadership.",
+                "Rebuilt the blog from the ground up using React, Next.js, and HubSpot as a headless CMS. Collaborated with designers, worked from wireframes in inVision, and demoed progress to leadership.",
                 "Assist in various web development and QA tasks across alwaysAI web platforms.",
             ],
         },
