@@ -507,7 +507,7 @@ aside nav {
     grid-row: 1 / -1;
     text-align: right;
     background: #28385e;
-    padding: 20px 20px;
+    padding: 20px 19px;
     border-radius: 0 2px 2px 0;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
 }
@@ -596,6 +596,7 @@ aside nav {
 
 .tech-item {
     padding-left: 20px;
+    padding-bottom: 7px;
 }
 
 .featured-project-screenshot {
@@ -830,7 +831,7 @@ footer a {
     }
 
     .tech-item {
-        padding: 0 20px 20px 0;
+        padding: 0 20px 7px 0;
     }
 
     .project-screenshot {
