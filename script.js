@@ -3,7 +3,7 @@ window.addEventListener("load", function () {
         {
             companyName: "alwaysAI",
             companyURL: "https://www.alwaysai.co/",
-            title: "Web Development Intern",
+            title: "Junior Web Developer",
             dateRange: "June 2020 - Present",
             jobDetails: [
                 "Rebuilt the blog from the ground up using React, Next.js, and HubSpot as a headless CMS. Collaborated with designers, worked from wireframes in inVision, and demoed progress to leadership.",
