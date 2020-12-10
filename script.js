@@ -6,8 +6,10 @@ window.addEventListener("load", function () {
             title: "Junior Web Developer",
             dateRange: "June 2020 - Present",
             jobDetails: [
-                "Rebuilt the blog from the ground up using React, Next.js, and HubSpot as a headless CMS. Collaborated with designers, worked from wireframes in inVision, and demoed progress to leadership.",
-                "Assist in various web development and QA tasks across alwaysAI web platforms.",
+                "Rebuilt blog from ground-up using React, Next.js, and HubSpot as a headless CMS. Project spanned the whole stack, from front-end to creating a Node/Express server and API endpoints.",
+                "Collaborate daily with lead designer to provide development and UX feedback on wireframes.",
+                "Implement functional and design overhauls of key product and marketing pages like the user dashboard, docs, pricing page, and partner pages.",
+                "Leverage agency background to provide high-level UX and SEO insights/strategy.",
             ],
         },
         {
