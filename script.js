@@ -6,10 +6,10 @@ window.addEventListener("load", function () {
             title: "Web Developer",
             dateRange: "June 2020 - Present",
             jobDetails: [
-                "Rebuilt blog from ground-up using React, Next.js, and HubSpot as a headless CMS. Project spanned the whole stack, from front-end to creating a Node/Express server and API endpoints.",
-                "Collaborate daily with lead designer to provide development and UX feedback on wireframes.",
-                "Implement functional and design overhauls of key product and marketing pages like the user dashboard, docs, pricing page, and partner pages.",
-                "Leverage agency background to provide high-level UX and SEO insights/strategy.",
+                "Rebuilt blog from ground-up with React, Next.js, TypeScript, and HubSpot as a headless CMS. Project spanned the whole stack, from front-end to creating a Node/Express server and AWS Lambda endpoints.",
+                "Implemented functional and design overhaul overhaul of user signup/signin pages that led to 2x increase in users logging in post-signup.",
+                "Collaborate daily with head of marketing to provide development and UX feedback on wireframes.",
+                "Leverage agency experience to provide UX and SEO insights/strategy.",
             ],
         },
         {
