@@ -6,6 +6,7 @@ window.addEventListener("load", function () {
             title: "Web Developer",
             dateRange: "June 2020 - Present",
             jobDetails: [
+                "Led redesign of marketing site with Next.js & Tailwind CSS. Oversaw 2 other developers & played key role estimating, managing project timeline, & building components.",
                 "Rebuilt blog from ground-up with React, Next.js, TypeScript, and HubSpot as a headless CMS. Project spanned the whole stack, from front-end to creating a Node/Express server and AWS Lambda endpoints.",
                 "Implemented functional and design overhaul overhaul of user signup/signin pages that led to 2x increase in users logging in post-signup.",
                 "Collaborate daily with head of marketing to provide development and UX feedback on wireframes.",
