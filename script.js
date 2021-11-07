@@ -4,7 +4,7 @@ window.addEventListener("load", function () {
       companyName: "alwaysAI",
       companyURL: "https://www.alwaysai.co/",
       title: "Web Developer",
-      dateRange: "June 2020 - Present",
+      dateRange: "June 2020 - November 2021",
       jobDetails: [
         "Led redesign of marketing site with Next.js & Tailwind CSS. Oversaw 2 other developers & played key role estimating, managing project timeline, & building components.",
         "Rebuilt blog from ground-up with React, Next.js, TypeScript, & HubSpot as a headless CMS. Project spanned the whole stack, from front-end to creating a Node/Express server & AWS Lambda functions.",
