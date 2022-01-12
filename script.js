@@ -1,6 +1,13 @@
 window.addEventListener("load", function () {
   const workExperience = [
     {
+      companyName: "PenChecks",
+      companyURL: "https://www.penchecks.com/",
+      title: "Front End Software Developer",
+      dateRange: "January 2022 - Present",
+      jobDetails: ["Details to come..."],
+    },
+    {
       companyName: "alwaysAI",
       companyURL: "https://www.alwaysai.co/",
       title: "Web Developer",
