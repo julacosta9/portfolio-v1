@@ -308,7 +308,7 @@ aside nav {
 #subheader-text {
   font-size: 20px;
   color: #bfb099;
-  width: 47%;
+  width: 48%;
   padding-bottom: 60px;
 }
 
@@ -350,7 +350,7 @@ aside nav {
 
 #headshot {
   width: 100%;
-  border-radius: 50%;
+  border-radius: 5px;
 }
 
 .tech-skills-list {

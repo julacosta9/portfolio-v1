@@ -3,7 +3,7 @@ window.addEventListener("load", function () {
     {
       companyName: "PenChecks",
       companyURL: "https://www.penchecks.com/",
-      title: "Front End Software Developer",
+      title: "Frontend Software Engineer",
       dateRange: "January 2022 - Present",
       jobDetails: ["Details to come..."],
     },
@@ -14,7 +14,7 @@ window.addEventListener("load", function () {
       dateRange: "June 2020 - November 2021",
       jobDetails: [
         "Led redesign of marketing site with Next.js & Tailwind CSS. Oversaw 2 other developers & played key role estimating, managing project timeline, & building components.",
-        "Rebuilt blog from ground-up with React, Next.js, TypeScript, & HubSpot as a headless CMS. Project spanned the whole stack, from front-end to creating a Node/Express server & AWS Lambda functions.",
+        "Rebuilt blog from ground-up with React, Next.js, TypeScript, & HubSpot as a headless CMS. Project spanned the whole stack, from frontend to creating a Node/Express server & AWS Lambda functions.",
         "Implemented functional & design overhaul overhaul of user signup/signin pages that  led to 2x increase in users logging in post-signup.",
         "Developed custom modules for use in HubSpot landing pages and event triggers to update contact properties via API.",
         "Leverage agency experience to provide UX and SEO insights/strategy.",
