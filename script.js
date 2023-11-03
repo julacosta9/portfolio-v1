@@ -5,7 +5,13 @@ window.addEventListener("load", function () {
       companyURL: "https://www.penchecks.com/",
       title: "Frontend Software Engineer",
       dateRange: "January 2022 - Present",
-      jobDetails: ["Details to come..."],
+      jobDetails: [
+        "Managed the maintenance and enhancement of multiple customer websites and internal admin tools.",
+        "Collaborated closely with product and UX designers to accurately translate Figma designs into development work.",
+        "Served as the go-to expert for frontend inquiries on a team of seasoned developers.",
+        "Implemented ESLint and Prettier to enhance codebase quality and consistency.",
+        "Evolved from an initial role as a frontend developer to attain proficiency in C# and MySQL, contributing to full stack stories and tasks.",
+      ],
     },
     {
       companyName: "alwaysAI",
